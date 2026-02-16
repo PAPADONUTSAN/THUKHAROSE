@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>သုခရိုးစ် - Thukha Rose | Premium Rose Shop Myanmar</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); }
+        header { background: linear-gradient(135deg, #81c784 0%, #aed581 100%); padding: 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .logo-section { display: flex; align-items: center; gap: 1rem; }
+        .logo-image { width: 80px; height: 80px; border-radius: 50%; border: 4px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .logo-text { color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .logo-text h1 { font-size: 2rem; font-weight: bold; }
+        .logo-text p { font-size: 1rem; opacity: 0.95; }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { color: white; text-decoration: none; font-weight: 600; transition: opacity 0.3s; font-size: 1.1rem; }
+        nav a:hover { opacity: 0.8; }
+        .hero { background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)); padding: 6rem 2rem; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .hero h2 { font-size: 3rem; color: #2e7d32; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .hero p { font-size: 1.5rem; color: #558b2f; margin-bottom: 2rem; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #ec407a 0%, #f48fb1 100%); color: white; padding: 1.2rem 3rem; border-radius: 50px; text-decoration: none; font-size: 1.3rem; font-weight: bold; transition: all 0.3s; box-shadow: 0 6px 20px rgba(236, 64, 122, 0.3); }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(236, 64, 122, 0.4); }
+        .about { background: white; padding: 4rem 2rem; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.5rem; color: #2e7d32; margin-bottom: 2rem; }
+        .about-content { text-align: center; font-size: 1.2rem; line-height: 2; color: #555; }
+        .features { padding: 4rem 2rem; background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; margin: 2rem auto 0; }
+        .feature-card { background: white; padding: 2.5rem; border-radius: 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-icon { font-size: 3.5rem; margin-bottom: 1rem; }
+        .feature-title { font-size: 1.5rem; color: #2e7d32; margin-bottom: 0.5rem; font-weight: bold; }
+        .feature-subtitle { font-size: 1.1rem; color: #888; margin-bottom: 0.8rem; }
+        .feature-description { color: #666; font-size: 1rem; }
+        .contact { padding: 4rem 2rem; background: white; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 2rem auto 0; }
+        .contact-card { background: linear-gradient(135deg, #81c784 0%, #aed581 100%); padding: 2rem; border-radius: 20px; text-align: center; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .contact-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .contact-card h3 { font-size: 1.3rem; margin-bottom: 0.8rem; }
+        .contact-card p { font-size: 1.1rem; }
+        .contact-card a { color: white; text-decoration: none; font-weight: bold; }
+        footer { background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%); color: white; text-align: center; padding: 2.5rem 2rem; }
+        footer a { color: white; text-decoration: none; margin: 0 1rem; transition: opacity 0.3s; }
+        footer a:hover { opacity: 0.8; }
+        .footer-links { margin: 1rem 0; font-size: 1.1rem; }
+        @media (max-width: 768px) { .hero h2 { font-size: 2rem; } .hero p { font-size: 1.2rem; } .logo-text h1 { font-size: 1.5rem; } nav ul { flex-direction: column; gap: 0.5rem; margin-top: 1rem; } .header-content { flex-direction: column; text-align: center; } .logo-image { width: 60px; height: 60px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo.jpg" alt="Thukha Rose Logo" class="logo-image">
+                <div class="logo-text">
+                    <h1>သုခရိုးစ်</h1>
+                    <p>Thukha Rose</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">ပင်မ / Home</a></li>
+                    <li><a href="#about">အကြောင်း / About</a></li>
+                    <li><a href="#contact">ဆက်သွယ်ရန် / Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>🌹 လတ်ဆတ်သော ပန်းများ</h2>
+            <p>Premium Fresh Roses in Myanmar</p>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2.5rem;">အရည်အသွေးမြင့် ပန်းများကို မြန်မာနိုင်ငံတစ်ဝှမ်း ပို့ဆောင်ပေးပါတယ်<br>Order fresh, beautiful roses delivered nationwide</p>
+            <a href="https://m.me/YourPageUsername" class="cta-button">💬 Messenger မှတစ်ဆင့် မှာယူရန်<br><span style="font-size: 0.9rem;">Order via Messenger</span></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ကျွန်တော်တို့အကြောင်း / About Us</h2>
+            <div class="about-content">
+                <p style="margin-bottom: 1.5rem;">သုခရိုးစ်ဆိုင်သည် မြန်မာနိုင်ငံတွင် အရည်အသွေးမြင့် ပန်းများကို ပို့ဆောင်ပေးသော ဆိုင်ဖြစ်ပါတယ်။</p>
+                <p style="margin-bottom: 1.5rem;">Thukha Rose is Myanmar's premium rose delivery service, bringing you the freshest and most beautiful roses for every special occasion.</p>
+                <p>လတ်ဆတ်သော ပန်းများ၊ မြန်ဆန်သော ပို့ဆောင်မှု၊ AI-powered Messenger Bot ဖြင့် လွယ်ကူသော မှာယူမှု။</p>
+                <p>Fresh roses, fast delivery, easy ordering with our AI-powered Messenger Bot.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">အထူးဝန်ဆောင်မှုများ / Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌹</div>
+                    <div class="feature-title">လတ်ဆတ်သော ပန်းများ</div>
+                    <div class="feature-subtitle">Fresh Roses</div>
+                    <p class="feature-description">အရည်အသွေးမြင့် လတ်ဆတ်သော ပန်းများကိုသာ ရောင်းချပါတယ်</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <div class="feature-title">မြန်ဆန်သော ပို့ဆောင်မှု</div>
+                    <div class="feature-subtitle">Fast Delivery</div>
+                    <p class="feature-description">ဒီနေ့နှင့် မနက်ဖြန် ပို့ဆောင်မှု ဝန်ဆောင်မှု</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <div class="feature-title">AI Messenger Bot</div>
+                    <div class="feature-subtitle">Smart Ordering</div>
+                    <p class="feature-description">24/7 အလိုအလျောက် အော်ဒါလက်ခံမှု စနစ်</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <div class="feature-title">လက်ဆောင်ထုပ်ပိုးမှု</div>
+                    <div class="feature-subtitle">Gift Wrapping</div>
+                    <p class="feature-description">လှပသော လက်ဆောင်ထုပ်ပိုးမှု ဝန်ဆောင်မှု</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">ဆက်သွယ်ရန် / Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>ဖုန်း / Phone</h3>
+                    <p><strong>+959790930777</strong></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>အီးမေးလ် / Email</h3>
+                    <p><strong>info@thukharose.com</strong></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>လိပ်စာ / Address</h3>
+                    <p><strong>No.43 A, Thukha Street<br>Mingalardon Township<br>Yangon, Myanmar</strong></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Messenger</h3>
+                    <p><a href="https://m.me/YourPageUsername"><strong>m.me/ThukhaRose</strong></a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>အချိန် / Hours</h3>
+                    <p><strong>8 AM - 8 PM</strong><br>နေ့စဉ် / Daily</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://m.me/YourPageUsername" class="cta-button">💬 ယခုမှာယူရန် / Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.2rem; margin-bottom: 1rem;">&copy; 2026 သုခရိုးစ် - Thukha Rose. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms & Conditions</a> | 
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.9;">🌹 Made with love in Myanmar 🇲🇲</p>
+        </div>
+    </footer>
+</body>
+</html>
